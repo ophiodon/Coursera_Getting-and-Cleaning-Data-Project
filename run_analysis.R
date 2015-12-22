@@ -1,19 +1,19 @@
 run_analysis <- function() {
     
     ## examines file and removes characters that are missing, problematic, etc.
-    features <- read.table("UCI_HAR_Dataset/features.txt", colClasses = "character")
+    features <- read.table("UCI_HARUS_Dataset/features.txt", colClasses = "character")
     features[,2] <- gsub("\\(|\\)","",features[,2])
     features[,2] <- gsub("-|,","_", features[,2])
     features[,2] <- tolower(features[,2])
     
  ##  these steps merge the test dataset 
- Sub_test<- read.table("UCI_HAR_Dataset/test/subject_test.txt")
+ Sub_test<- read.table("UCI_HARUS_Dataset/test/subject_test.txt")
   colnames(Sub_test) <- "subject_id"
   
-  Act_test <- read.table("UCI_HAR_Dataset/test/y_test.txt")
+  Act_test <- read.table("UCI_HARUS_Dataset/test/y_test.txt")
   colnames(Act_test) <- "activity_id"
   
-  Data_test <- read.table("UCI_HAR_Dataset/test/X_test.txt")
+  Data_test <- read.table("UCI_HARUS_Dataset/test/X_test.txt")
   colnames(Data_test) <- features[,2]
   
   merge_all<- cbind(Sub_test,Act_test,Data_test)
@@ -22,13 +22,13 @@ run_analysis <- function() {
   Data_test_all <- merge_all[,c(1,2,grep("_mean_|_mean$|_std_|_std$", names(merge_all)))]
   
   ## These steps merge the train dataset 
-  Train_sub <- read.table("UCI_HAR_Dataset/train/subject_train.txt")
+  Train_sub <- read.table("UCI_HARUS_Dataset/train/subject_train.txt")
   colnames(Train_sub) <- "subject_id"
   
-  Train_act <- read.table("UCI_HAR_Dataset/train/y_train.txt")
+  Train_act <- read.table("UCI_HARUS_Dataset/train/y_train.txt")
   colnames(Train_act) <- "activity_id"
   
-  Train_data <- read.table("UCI_HAR_Dataset/train/X_train.txt")
+  Train_data <- read.table("UCI_HARUS_Dataset/train/X_train.txt")
   colnames(Train_data) <- features[,2]
   
   Train_merged <- cbind(Train_sub,Train_act,Train_data)
@@ -40,7 +40,7 @@ run_analysis <- function() {
     required_data <- rbind(Data_test_all,Train_all)
     
     ## Adds the activity data labels
-    activity_labels <- read.table("UCI_HAR_Dataset/activity_labels.txt", colClasses = "character")
+    activity_labels <- read.table("UCI_HARUS_Dataset/activity_labels.txt", colClasses = "character")
     colnames(activity_labels) <- c("activity_id", "activity_name")
     
     ## Merges above data and activity data
@@ -61,11 +61,10 @@ run_analysis <- function() {
         
     }
     
-    tidied_data <- tidied_data[order(tidied_data$subject_id,tidied_data$activity_name),]
+    Tidy <- tidied_data[order(tidied_data$subject_id,tidied_data$activity_name),]
     
     
-    ## Output tidied data into TXT and CSV formats
-    write.csv(tidied_data, "tidied_data.csv", row.names=FALSE)
-    write.table(tidied_data, "tidied_data.txt", row.names=FALSE)
+    ## Final output in txt format
+    write.table(Tidy, "Tidy.txt", row.names=FALSE)
     
 }
