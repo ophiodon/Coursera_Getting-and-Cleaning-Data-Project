@@ -2,7 +2,7 @@
 The data originates from an experiments carried out on a group 30 volunteers, ages 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on their waist. Using the phone’s embedded accelerometer and gyroscope, 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz were recorded. The experiments  were video-recorded to label the data manually. The dataset was randomly partitioned into two groups: 
 
 1. Group 1:70% of the volunteers was selected for generating the training data 
-2.Group 2: 30%of the volunteers was selected for generating  the test data.
+2. Group 2: 30%of the volunteers was selected for generating  the test data.
 
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
 
