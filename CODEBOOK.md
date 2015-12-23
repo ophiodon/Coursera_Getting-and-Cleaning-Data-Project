@@ -1,14 +1,16 @@
-#Data Information
+##Data Information
 The data originates from an experiments carried out on a group 30 volunteers, ages 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on their waist. Using the phone’s embedded accelerometer and gyroscope, 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz were recorded. The experiments  were video-recorded to label the data manually. The dataset was randomly partitioned into two groups: 
 1)	Group 1:70% of the volunteers was selected for generating the training data 
 2)	Group 2: 30%of the volunteers was selected for generating  the test data.
 
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
 
-Database
+##Database
 The database used in this work originate  from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. Time (t) domain signals were captured at a constant rate of 50 Hz. and the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) – both using a low pass Butterworth filter. Velocity body linear acceleration and angular velocity were derived to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ) and the magnitude of the signals were calculated using a Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). A Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag.
-Description: Variables
+
+##Description: Variables
 Acceleration units g’sand rad/sec for the gyro and g/sec and for the corresponding jerks. These signals were used to estimate variables of the feature vector for each pattern:‘-XYZ’ is used to denote 3-axial signals in the X, Y and Z directions. They total 33 measurements including the 3 dimensions - the X,Y, and Z axes.
+
 1.	t = time (leading ‘t’ on files)
 2.	f = frequency of movement (leading ‘f’ on files)
 3.	Body = related to body movement.
@@ -23,7 +25,7 @@ Acceleration units g’sand rad/sec for the gyro and g/sec and for the correspon
 12.	Y=directional measurement in Y axis vector
 13.	Z=directional measurement in Z axis vector
 
-Variables in Data Set 
+##Variables in Data Set 
 Note: All values are numeric and ‘t’ or ‘f’ have been applied to these variables in the associated tidy dataset.
 Variable	Value
 BodyAcc-XYZ	body acceleration 
@@ -54,9 +56,7 @@ BodyGyroJerkMag	Magnitude of jerk in gyroscope
 •	fBodyGyroMag
 •	fBodyGyroJerkMag
 
-
-Activity Labels
-
+##Activity Labels
     WALKING (value 1): subject was walking during the test
     WALKING_UPSTAIRS (value 2): subject was walking up a staircase during the test
     WALKING_DOWNSTAIRS (value 3): subject was walking down a staircase during the test
