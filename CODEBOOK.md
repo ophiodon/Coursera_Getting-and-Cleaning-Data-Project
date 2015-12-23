@@ -42,30 +42,32 @@ Note: All values are numeric and ‘t’ or ‘f’ have been applied to these v
 |BodyGyroMag	|Magnitude of gyroscope|
 |BodyGyroJerkMag	|Magnitude of jerk in gyroscope|
 
+##File Outputs
+
 * tBodyAcc-XYZ
 * tGravityAcc-XYZ
 * tBodyAccJerk-XYZ
-*tBodyGyro-XYZ
-*tBodyGyroJerk-XYZ
-*tBodyAccMag
-*tGravityAccMag
-*tBodyAccJerkMag
-*tBodyGyroMag
-*tBodyGyroJerkMag
-*fBodyAcc-XYZ
-*fBodyAccJerk-XYZ
-*fBodyGyro-XYZ
-*fBodyAccMag
-*fBodyAccJerkMag
-*fBodyGyroMag
-*fBodyGyroJerkMag
+* tBodyGyro-XYZ
+* tBodyGyroJerk-XYZ
+* tBodyAccMag
+* tGravityAccMag
+* tBodyAccJerkMag
+* tBodyGyroMag
+* tBodyGyroJerkMag
+* fBodyAcc-XYZ
+* fBodyAccJerk-XYZ
+* fBodyGyro-XYZ
+* fBodyAccMag
+* fBodyAccJerkMag
+* fBodyGyroMag
+* fBodyGyroJerkMag
 
 
 ##Activity Labels
-*WALKING (value 1): subject was walking during the test
-*WALKING_UPSTAIRS (value 2): subject was walking up a staircase during the test
-*WALKING_DOWNSTAIRS (value 3): subject was walking down a staircase during the test
-*SITTING (value 4): subject was sitting during the test
-*STANDING (value 5): subject was standing during the test
-*LAYING (value 6): subject was laying down during the test
+* WALKING (value 1): subject was walking during the test
+* WALKING_UPSTAIRS (value 2): subject was walking up a staircase during the test
+* WALKING_DOWNSTAIRS (value 3): subject was walking down a staircase during the test
+* SITTING (value 4): subject was sitting during the test
+* STANDING (value 5): subject was standing during the test
+* LAYING (value 6): subject was laying down during the test
 
