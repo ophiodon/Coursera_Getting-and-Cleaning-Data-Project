@@ -39,7 +39,8 @@ GravityAccMag	Magnitude of gravity acceleration
 BodyAccJerkMag	Magnitude of jerk acceleration
 BodyGyroMag	Magnitude of gyroscope
 BodyGyroJerkMag	Magnitude of jerk in gyroscope
-•	tBodyAcc-XYZ
+
+*tBodyAcc-XYZ
 •	tGravityAcc-XYZ
 •	tBodyAccJerk-XYZ
 •	tBodyGyro-XYZ
