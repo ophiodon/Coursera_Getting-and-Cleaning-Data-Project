@@ -27,7 +27,8 @@ Acceleration units g’sand rad/sec for the gyro and g/sec and for the correspon
 
 ##Variables in Data Set 
 Note: All values are numeric and ‘t’ or ‘f’ have been applied to these variables in the associated tidy dataset.
-Variable	Value
+
+###Variable	Value
 BodyAcc-XYZ	body acceleration 
 GravityAcc-XYZ	Gravity acceleration 
 BodyAccJerk-XYZ	Body jerk acceleration
