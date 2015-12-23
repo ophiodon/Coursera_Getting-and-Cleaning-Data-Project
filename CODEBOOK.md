@@ -41,8 +41,8 @@ Note: All values are numeric and ‘t’ or ‘f’ have been applied to these v
 |BodyGyroMag	|Magnitude of gyroscope|
 |BodyGyroJerkMag	|Magnitude of jerk in gyroscope|
 
-*tBodyAcc-XYZ
-*tGravityAcc-XYZ
+..*tBodyAcc-XYZ
+..*tGravityAcc-XYZ
 *tBodyAccJerk-XYZ
 *tBodyGyro-XYZ
 *tBodyGyroJerk-XYZ
